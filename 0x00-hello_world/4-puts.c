@@ -8,5 +8,6 @@
 int main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle");
+/* Retun: Always 0 (Success)*/
 	return (0);
 }
