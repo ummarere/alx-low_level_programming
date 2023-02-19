@@ -1,13 +1,11 @@
 #include <stdio.h>
 
-/**
- * main - Entry point
+/* main - Entry point
  *
- * Retun: Always 0 (Success)
+ * Retun - Always 0 (Success)
  */
 int main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle");
-/* Retun: Always 0 (Success)*/
 	return (0);
 }
