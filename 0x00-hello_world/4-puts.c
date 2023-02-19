@@ -3,8 +3,8 @@
 /**
  * main - Entry point
  *
- * Description: 'This c program outputs the contents of the puts function'
- * 
+ * Description: 'This program outputs the contents of the puts function'
+ *
  * Return: Always 0 (Success)
  */
 int main(void)
