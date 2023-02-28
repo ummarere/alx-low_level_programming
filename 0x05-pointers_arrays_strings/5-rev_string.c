@@ -2,13 +2,13 @@
 #include <string.h>
 
 /**
- * print_rev - this function prints strings in reverse
+ * rev_string - this function prints strings in reverse
  *
  * @s: the string to be printed in reverse order
  *
  */
 
-void print_rev(char *s)
+void rev_string(char *s)
 {
 	int i, j;
 	char temp;
