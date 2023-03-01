@@ -4,7 +4,7 @@
 /**
  * print_rev - Afunction that prints a string, followed by a new line
  * @s: Function parameter
- * Return: Always 0
+ *  Return: Always 0
  */
 
 void print_rev(char *s)
@@ -21,4 +21,4 @@ void print_rev(char *s)
 
 	/* Print a new line at the end */
 	putchar('\n');
-} 
+}
