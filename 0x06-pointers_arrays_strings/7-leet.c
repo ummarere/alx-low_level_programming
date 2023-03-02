@@ -1,27 +1,31 @@
 #include "main.h"
 
 /**
- * leet - encode string into 1337 leet
- * @s: string to manipulate
+ * leet - convert characters into 1337
+ *
+ * @a: string to convert
+ *
  * Return: string
  */
-
-char *leet(char *s)
+char *leet(char *a)
 {
+	char *sptr = a;
+	int index = 0;
+	char translation[][10] = { { 'a', 'A', 't', 'T', 'o', 'O', 'e', 'E', 'l', 'L'}
+				  , { '4', '4', '7', '7', '0', '0', '3', '3', '1', '1'} };
 
-	int a[11] = {'a', 'A', 'e', 'E', 'o', 'O', 't', 'T', 'l', 'L'};
-	int b[11] = {'4', '4', '3', '3', '0', '0', '7', '7', '1', '1'};
-
-	int i, j;
-
-	for (j = 0; s[j] != '\0'; j++)
+	while (*sptr != 0)
 	{
-		for (i = 0; a[i] != '\0'; i++)
+		if (*sptr == 'a' || *sptr == 'A' || *sptr == 'e' || *sptr == 'E'
+		    || *sptr == 'o' || *sptr == 'O' || *sptr == 't' || *sptr == 'T'
+		    || *sptr == 'l' || *sptr == 'L')
 		{
-			if (s[j] == a[i])
-				s[j] = b[i];
+			index = 0;
+			while (translation[0][index] != *sptr)
+				index++;
+			*sptr = translation[1][index];
 		}
+		sptr++;
 	}
-
-	return (s);
+	return (a);
 }
