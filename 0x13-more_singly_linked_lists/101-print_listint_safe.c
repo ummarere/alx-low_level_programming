@@ -1,9 +1,10 @@
 #include "lists.h"
-
 /**
- * free_listp - frees a linked list
- * @head: head of a list.
- * Return: no return.
+ * print_listint_safe - thsi function print a list in safe mode
+ * @head: the head of list
+ * Description: this function print a string in a safe mode
+ * section header: the header of this function is lists.h)*
+ * Return: the size of the list
  */
 size_t print_listint_safe(const listint_t *head)
 {
